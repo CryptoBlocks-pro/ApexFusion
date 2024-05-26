@@ -130,6 +130,8 @@ echo -e "If you are running multiple instances on the same server, you'll need t
 echo -e "-- hasEKG and hasPrometheus port numbers in the configuration.yaml file \e[1mBEFORE\e[0m running this script, or in the configuration.json file after running this script."
 echo "-- the CNODE_PORT running port in the env file in the scripts folder."
 echo
+echo "Also, don't forget to open inbound firewall access to the CNODE_PORT env value if you are running a relay node."
+echo
 echo "To enable the cardano-node instance to run as a service, you can use the following command:"
 echo -e "\e[7m${APEX_TOP_LEVEL_FOLDER}/scripts/cnode.sh -d\e[0m"
 echo
